@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*__pycache__/
 *.py[cod]
 *$py.class
 
@@ -20,6 +21,7 @@ parts/
 sdist/
 var/
 wheels/
+resources/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
@@ -102,7 +104,12 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+.env-docker
+.env-local
 .env
+*.env-docker
+*.env-local
+*.env
 .venv
 env/
 venv/

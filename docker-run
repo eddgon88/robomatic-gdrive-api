@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#get name of the current directory
+NAME=$(basename "$PWD")
+
+#run the docker
+docker run --name $NAME --network robomatic -p 5008:5008 -v /home/edgar/robomatic/github/robomatic-gdrive-api/resources:/home/robomatic-gdrive-api/resources $NAME

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from .. services.gdrive_service import GdriveService
 from .. models.models import GsheetRequest
 
